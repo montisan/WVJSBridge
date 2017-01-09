@@ -33,7 +33,7 @@ pod "WVJSBridge"
 ### Step 2:
 
 ```javascript
-	// Call native method by javascript
+	// Call native method with javascript
     if(window.hnBridge)
     {
         ptBridge.testObjcCallback({
