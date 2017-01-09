@@ -1,0 +1,83 @@
+//
+//  WVJSCoreBridge.js.txt
+//  WVJSBridge
+//
+//  Created by hncoder on 2017/1/9.
+//  Copyright © 2017年 hncoder. All rights reserved.
+//
+
+;(function() {
+	if (window.WVJSCoreBridge) { return }
+	var messagingIframe
+	var sendMessageQueue = []
+	
+	var CUSTOM_PROTOCOL_SCHEME = 'wvjbscheme'
+	var QUEUE_HAS_MESSAGE = '__WVJB_QUEUE_MESSAGE__'
+	
+	var responseCallbacks = {}
+	var uniqueId = 1
+	
+	function _createQueueReadyIframe(doc) {
+		messagingIframe = doc.createElement('iframe')
+		messagingIframe.style.display = 'none'
+		messagingIframe.src = CUSTOM_PROTOCOL_SCHEME + '://' + QUEUE_HAS_MESSAGE
+		doc.documentElement.appendChild(messagingIframe)
+	}
+	
+	function callHandler(handlerName, data) {
+		_doSend({ handlerName:handlerName, data:data })
+	}
+	
+	function _doSend(message) {
+		if (message.data && message.data.callback) {
+			var callbackId = 'cb_'+(uniqueId++)+'_'+new Date().getTime()
+			responseCallbacks[callbackId] = message.data.callback
+			message['callbackId'] = callbackId
+		}
+
+		if (message.data && message.data.data) {
+			message.data = message.data.data
+		} 
+
+		sendMessageQueue.push(message)
+		messagingIframe.src = CUSTOM_PROTOCOL_SCHEME + '://' + QUEUE_HAS_MESSAGE
+	}
+
+	function _fetchQueue() {
+		var messageQueueString = JSON.stringify(sendMessageQueue)
+		sendMessageQueue = []
+		return messageQueueString
+	}
+
+	function _dispatchMessageFromObjC(messageJSON) {
+		setTimeout(function _timeoutDispatchMessageFromObjC() {
+			var message = JSON.parse(messageJSON)
+			var messageHandler
+			var responseCallback
+
+			if (message.responseId) {
+				responseCallback = responseCallbacks[message.responseId]
+				if (!responseCallback) { return; }
+				responseCallback(message.responseData)
+				delete responseCallbacks[message.responseId]
+			}
+		})
+	}
+	
+	function _handleMessageFromObjC(messageJSON) {
+		_dispatchMessageFromObjC(messageJSON)
+	}
+
+	window.WVJSCoreBridge = {
+		callHandler: callHandler,
+		_fetchQueue: _fetchQueue,
+		_handleMessageFromObjC: _handleMessageFromObjC
+	}
+
+	var doc = document
+	_createQueueReadyIframe(doc)
+	var readyEvent = doc.createEvent('Events')
+	readyEvent.initEvent('WVJSCoreBridgeReady')
+	readyEvent.bridge = WVJSCoreBridge
+	doc.dispatchEvent(readyEvent)
+})();

@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D54CB2F21E23BA16006729F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D54CB2F11E23BA16006729F7 /* main.m */; };
+		D54CB2F51E23BA16006729F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D54CB2F41E23BA16006729F7 /* AppDelegate.m */; };
+		D54CB2F81E23BA16006729F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D54CB2F71E23BA16006729F7 /* ViewController.m */; };
+		D54CB2FB1E23BA16006729F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54CB2F91E23BA16006729F7 /* Main.storyboard */; };
+		D54CB2FD1E23BA16006729F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54CB2FC1E23BA16006729F7 /* Assets.xcassets */; };
+		D54CB3001E23BA16006729F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54CB2FE1E23BA16006729F7 /* LaunchScreen.storyboard */; };
+		D54CB30B1E23BA16006729F7 /* WVJSBridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54CB30A1E23BA16006729F7 /* WVJSBridgeTests.m */; };
+		D54CB3161E23BA16006729F7 /* WVJSBridgeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54CB3151E23BA16006729F7 /* WVJSBridgeUITests.m */; };
+		D54CB3301E23C958006729F7 /* WVJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D54CB32C1E23C958006729F7 /* WVJSBridge.m */; };
+		D54CB3311E23C958006729F7 /* WVJSCoreBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = D54CB32E1E23C958006729F7 /* WVJSCoreBridge.js.txt */; };
+		D54CB3321E23C958006729F7 /* WVJSCoreBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D54CB32F1E23C958006729F7 /* WVJSCoreBridge.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D54CB3071E23BA16006729F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D54CB2E51E23BA16006729F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D54CB2EC1E23BA16006729F7;
+			remoteInfo = WVJSBridge;
+		};
+		D54CB3121E23BA16006729F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D54CB2E51E23BA16006729F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D54CB2EC1E23BA16006729F7;
+			remoteInfo = WVJSBridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D54CB2ED1E23BA16006729F7 /* WVJSBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WVJSBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54CB2F11E23BA16006729F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D54CB2F31E23BA16006729F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D54CB2F41E23BA16006729F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D54CB2F61E23BA16006729F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D54CB2F71E23BA16006729F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D54CB2FA1E23BA16006729F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D54CB2FC1E23BA16006729F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D54CB2FF1E23BA16006729F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D54CB3011E23BA16006729F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54CB3061E23BA16006729F7 /* WVJSBridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WVJSBridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54CB30A1E23BA16006729F7 /* WVJSBridgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVJSBridgeTests.m; sourceTree = "<group>"; };
+		D54CB30C1E23BA16006729F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54CB3111E23BA16006729F7 /* WVJSBridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WVJSBridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54CB3151E23BA16006729F7 /* WVJSBridgeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVJSBridgeUITests.m; sourceTree = "<group>"; };
+		D54CB3171E23BA16006729F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54CB32B1E23C958006729F7 /* WVJSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WVJSBridge.h; path = ../../../Pod/Classes/WVJSBridge/WVJSBridge.h; sourceTree = "<group>"; };
+		D54CB32C1E23C958006729F7 /* WVJSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WVJSBridge.m; path = ../../../Pod/Classes/WVJSBridge/WVJSBridge.m; sourceTree = "<group>"; };
+		D54CB32D1E23C958006729F7 /* WVJSCoreBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WVJSCoreBridge.h; path = ../../../Pod/Classes/WVJSBridge/WVJSCoreBridge.h; sourceTree = "<group>"; };
+		D54CB32E1E23C958006729F7 /* WVJSCoreBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = WVJSCoreBridge.js.txt; path = ../../../Pod/Classes/WVJSBridge/WVJSCoreBridge.js.txt; sourceTree = "<group>"; };
+		D54CB32F1E23C958006729F7 /* WVJSCoreBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WVJSCoreBridge.m; path = ../../../Pod/Classes/WVJSBridge/WVJSCoreBridge.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D54CB2EA1E23BA16006729F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54CB3031E23BA16006729F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54CB30E1E23BA16006729F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D54CB2E41E23BA16006729F7 = {
+			isa = PBXGroup;
+			children = (
+				D54CB2EF1E23BA16006729F7 /* WVJSBridge */,
+				D54CB3091E23BA16006729F7 /* WVJSBridgeTests */,
+				D54CB3141E23BA16006729F7 /* WVJSBridgeUITests */,
+				D54CB2EE1E23BA16006729F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D54CB2EE1E23BA16006729F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D54CB2ED1E23BA16006729F7 /* WVJSBridge.app */,
+				D54CB3061E23BA16006729F7 /* WVJSBridgeTests.xctest */,
+				D54CB3111E23BA16006729F7 /* WVJSBridgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D54CB2EF1E23BA16006729F7 /* WVJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				D54CB3231E23BDAB006729F7 /* WVJSBridge */,
+				D54CB2F31E23BA16006729F7 /* AppDelegate.h */,
+				D54CB2F41E23BA16006729F7 /* AppDelegate.m */,
+				D54CB2F61E23BA16006729F7 /* ViewController.h */,
+				D54CB2F71E23BA16006729F7 /* ViewController.m */,
+				D54CB2F91E23BA16006729F7 /* Main.storyboard */,
+				D54CB2FC1E23BA16006729F7 /* Assets.xcassets */,
+				D54CB2FE1E23BA16006729F7 /* LaunchScreen.storyboard */,
+				D54CB3011E23BA16006729F7 /* Info.plist */,
+				D54CB2F01E23BA16006729F7 /* Supporting Files */,
+			);
+			path = WVJSBridge;
+			sourceTree = "<group>";
+		};
+		D54CB2F01E23BA16006729F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D54CB2F11E23BA16006729F7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D54CB3091E23BA16006729F7 /* WVJSBridgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D54CB30A1E23BA16006729F7 /* WVJSBridgeTests.m */,
+				D54CB30C1E23BA16006729F7 /* Info.plist */,
+			);
+			path = WVJSBridgeTests;
+			sourceTree = "<group>";
+		};
+		D54CB3141E23BA16006729F7 /* WVJSBridgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D54CB3151E23BA16006729F7 /* WVJSBridgeUITests.m */,
+				D54CB3171E23BA16006729F7 /* Info.plist */,
+			);
+			path = WVJSBridgeUITests;
+			sourceTree = "<group>";
+		};
+		D54CB3231E23BDAB006729F7 /* WVJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				D54CB32B1E23C958006729F7 /* WVJSBridge.h */,
+				D54CB32C1E23C958006729F7 /* WVJSBridge.m */,
+				D54CB32D1E23C958006729F7 /* WVJSCoreBridge.h */,
+				D54CB32E1E23C958006729F7 /* WVJSCoreBridge.js.txt */,
+				D54CB32F1E23C958006729F7 /* WVJSCoreBridge.m */,
+			);
+			path = WVJSBridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D54CB2EC1E23BA16006729F7 /* WVJSBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54CB31A1E23BA16006729F7 /* Build configuration list for PBXNativeTarget "WVJSBridge" */;
+			buildPhases = (
+				D54CB2E91E23BA16006729F7 /* Sources */,
+				D54CB2EA1E23BA16006729F7 /* Frameworks */,
+				D54CB2EB1E23BA16006729F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WVJSBridge;
+			productName = WVJSBridge;
+			productReference = D54CB2ED1E23BA16006729F7 /* WVJSBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D54CB3051E23BA16006729F7 /* WVJSBridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54CB31D1E23BA16006729F7 /* Build configuration list for PBXNativeTarget "WVJSBridgeTests" */;
+			buildPhases = (
+				D54CB3021E23BA16006729F7 /* Sources */,
+				D54CB3031E23BA16006729F7 /* Frameworks */,
+				D54CB3041E23BA16006729F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D54CB3081E23BA16006729F7 /* PBXTargetDependency */,
+			);
+			name = WVJSBridgeTests;
+			productName = WVJSBridgeTests;
+			productReference = D54CB3061E23BA16006729F7 /* WVJSBridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D54CB3101E23BA16006729F7 /* WVJSBridgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54CB3201E23BA16006729F7 /* Build configuration list for PBXNativeTarget "WVJSBridgeUITests" */;
+			buildPhases = (
+				D54CB30D1E23BA16006729F7 /* Sources */,
+				D54CB30E1E23BA16006729F7 /* Frameworks */,
+				D54CB30F1E23BA16006729F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D54CB3131E23BA16006729F7 /* PBXTargetDependency */,
+			);
+			name = WVJSBridgeUITests;
+			productName = WVJSBridgeUITests;
+			productReference = D54CB3111E23BA16006729F7 /* WVJSBridgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D54CB2E51E23BA16006729F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = hncoder;
+				TargetAttributes = {
+					D54CB2EC1E23BA16006729F7 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					D54CB3051E23BA16006729F7 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D54CB2EC1E23BA16006729F7;
+					};
+					D54CB3101E23BA16006729F7 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D54CB2EC1E23BA16006729F7;
+					};
+				};
+			};
+			buildConfigurationList = D54CB2E81E23BA16006729F7 /* Build configuration list for PBXProject "WVJSBridge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D54CB2E41E23BA16006729F7;
+			productRefGroup = D54CB2EE1E23BA16006729F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D54CB2EC1E23BA16006729F7 /* WVJSBridge */,
+				D54CB3051E23BA16006729F7 /* WVJSBridgeTests */,
+				D54CB3101E23BA16006729F7 /* WVJSBridgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D54CB2EB1E23BA16006729F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54CB3001E23BA16006729F7 /* LaunchScreen.storyboard in Resources */,
+				D54CB2FD1E23BA16006729F7 /* Assets.xcassets in Resources */,
+				D54CB3311E23C958006729F7 /* WVJSCoreBridge.js.txt in Resources */,
+				D54CB2FB1E23BA16006729F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54CB3041E23BA16006729F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54CB30F1E23BA16006729F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D54CB2E91E23BA16006729F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54CB2F81E23BA16006729F7 /* ViewController.m in Sources */,
+				D54CB2F51E23BA16006729F7 /* AppDelegate.m in Sources */,
+				D54CB3301E23C958006729F7 /* WVJSBridge.m in Sources */,
+				D54CB3321E23C958006729F7 /* WVJSCoreBridge.m in Sources */,
+				D54CB2F21E23BA16006729F7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54CB3021E23BA16006729F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54CB30B1E23BA16006729F7 /* WVJSBridgeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54CB30D1E23BA16006729F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54CB3161E23BA16006729F7 /* WVJSBridgeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D54CB3081E23BA16006729F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D54CB2EC1E23BA16006729F7 /* WVJSBridge */;
+			targetProxy = D54CB3071E23BA16006729F7 /* PBXContainerItemProxy */;
+		};
+		D54CB3131E23BA16006729F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D54CB2EC1E23BA16006729F7 /* WVJSBridge */;
+			targetProxy = D54CB3121E23BA16006729F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D54CB2F91E23BA16006729F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D54CB2FA1E23BA16006729F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D54CB2FE1E23BA16006729F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D54CB2FF1E23BA16006729F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D54CB3181E23BA16006729F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D54CB3191E23BA16006729F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D54CB31B1E23BA16006729F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WVJSBridge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hncoder.WVJSBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D54CB31C1E23BA16006729F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WVJSBridge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hncoder.WVJSBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D54CB31E1E23BA16006729F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WVJSBridgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hncoder.WVJSBridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WVJSBridge.app/WVJSBridge";
+			};
+			name = Debug;
+		};
+		D54CB31F1E23BA16006729F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WVJSBridgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hncoder.WVJSBridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WVJSBridge.app/WVJSBridge";
+			};
+			name = Release;
+		};
+		D54CB3211E23BA16006729F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WVJSBridgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hncoder.WVJSBridgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WVJSBridge;
+			};
+			name = Debug;
+		};
+		D54CB3221E23BA16006729F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WVJSBridgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hncoder.WVJSBridgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WVJSBridge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D54CB2E81E23BA16006729F7 /* Build configuration list for PBXProject "WVJSBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54CB3181E23BA16006729F7 /* Debug */,
+				D54CB3191E23BA16006729F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54CB31A1E23BA16006729F7 /* Build configuration list for PBXNativeTarget "WVJSBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54CB31B1E23BA16006729F7 /* Debug */,
+				D54CB31C1E23BA16006729F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54CB31D1E23BA16006729F7 /* Build configuration list for PBXNativeTarget "WVJSBridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54CB31E1E23BA16006729F7 /* Debug */,
+				D54CB31F1E23BA16006729F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54CB3201E23BA16006729F7 /* Build configuration list for PBXNativeTarget "WVJSBridgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54CB3211E23BA16006729F7 /* Debug */,
+				D54CB3221E23BA16006729F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D54CB2E51E23BA16006729F7 /* Project object */;
+}
