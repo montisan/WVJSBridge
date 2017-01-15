@@ -102,4 +102,4 @@ WVJSBridge is available under the MIT license. See the LICENSE file for more inf
 
 ## Notes
 
-JavaScript bridge between native (iOS) and JavaScript.
+JavaScript bridge between native (iOS) and JavaScript, optimizing the WebViewJavascriptBridge(https://github.com/marcuswestin/WebViewJavascriptBridge).
